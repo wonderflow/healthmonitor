@@ -1,3 +1,20 @@
+h4. add appinfo event
+    subscribe dea.heartbeat messages,extract droplet id and instance id;
+    request dea.find.droplet message to collect instance resource information according to above infomation,eg cpu,mem,status ...
+    this metric shoud be add to opentsdb（modify opentsdb metric）
+    process.cpu.percenttotal
+    process.mem.percent
+    process.mem.kb
+    process.process.status
+    process.process.monitor
+    process.process.uptime
+    process.process.children
+    process.healthy
+    tag is  job,index
+    
+
+
+
 h4. Synopsis
 
 BOSH Health Monitor (BHM) is a component that monitors health of one or multiple BOSH deployments. It processes heartbeats and alerts from BOSH agents and notifies interested parties if something goes wrong.
