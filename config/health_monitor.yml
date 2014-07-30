@@ -1,0 +1,41 @@
+---
+http:
+  port: 25923
+  user: admin
+  password: admin
+
+mbus:
+  endpoint: nats://10.10.101.165:4222
+  user: nats
+  password: c1oudc0w
+
+director:
+  endpoint: http://10.104.101.44:25555
+  user: admin
+  password: admin
+
+intervals:
+  poll_director: 60
+  poll_grace_period: 30
+  log_stats: 300
+  analyze_agents: 60
+  agent_timeout: 180
+  rogue_agent_alert: 180
+
+logfile: /var/vcap/sys/log/health_monitor/health_monitor.log
+loglevel: info
+
+plugins:
+
+  - name: logger
+    events:
+      - alert
+
+  - name: tsdb
+    events:
+      - alert
+      - heartbeat
+      - appinfo
+    options:
+      host: 10.10.102.55
+      port: 4242
