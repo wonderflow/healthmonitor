@@ -1,0 +1,56 @@
+before run
+system.load.1m 1407477324 0.00 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.cpu.user 1407477324 0.3 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.cpu.sys 1407477324 0.1 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.cpu.wait 1407477324 0.0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.mem.percent 1407477324 8.7 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.mem.kb 1407477324 179144 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.swap.percent 1407477324 0.0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.swap.kb 1407477324 0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.disk.system.percent 1407477324 5 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.healthy 1407477324 1 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.cpu.percenttotal 1407477324 0.0 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.mem.percent 1407477324 3.1 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.mem.kb 1407477324 64492 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.process.status 1407477324 0 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.process.monitor 1407477324 1 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.process.uptime 1407477324 788356 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.process.children 1407477324 0 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.healthy 1407477324 1 {"job"=>"cloud_agent_etcd", "index"=>"0", "role"=>"unknown"}
+process.cpu.percenttotal 1407477324 0.0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.mem.percent 1407477324 1.2 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.mem.kb 1407477324 25660 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.process.status 1407477324 0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.process.monitor 1407477324 1 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.process.uptime 1407477324 788354 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.process.children 1407477324 0 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+process.healthy 1407477324 1 {"job"=>"etcd", "index"=>"0", "role"=>"unknown"}
+system.load.1m 1407477324 0.00 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.cpu.user 1407477324 0.1 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.cpu.sys 1407477324 0.0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.cpu.wait 1407477324 0.0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.mem.percent 1407477324 7.9 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.mem.kb 1407477324 323816 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.swap.percent 1407477324 0.0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.swap.kb 1407477324 0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.disk.system.percent 1407477324 28 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+system.healthy 1407477324 1 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.cpu.percenttotal 1407477324 0.4 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.mem.percent 1407477324 1.0 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.mem.kb 1407477324 41492 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.status 1407477324 0 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.monitor 1407477324 1 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.uptime 1407477324 76256 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.children 1407477324 0 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.healthy 1407477324 1 {"job"=>"cloud_agent_opentsdb", "index"=>"0", "role"=>"unknown"}
+process.cpu.percenttotal 1407477324 0.0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.mem.percent 1407477324 2.6 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.mem.kb 1407477324 107224 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.status 1407477324 0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.monitor 1407477324 1 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.uptime 1407477324 76254 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.process.children 1407477324 0 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+process.healthy 1407477324 1 {"job"=>"opentsdb", "index"=>"0", "role"=>"unknown"}
+responsehash:
+{"dea"=>"0-7f6fe0afcf954c58b2544696cfd63c9d", "droplet"=>"ab0a25c6-359e-4a4e-9804-3d0b9976c89b", "version"=>"f23a38a2-34fc-47c4-bf35-a1a6ba5fa175", "instance"=>"b7f0f5a1fb3847cc8858e12d723d34b8", "index"=>0, "state"=>"RUNNING", "state_timestamp"=>1407466421.27603, "staged"=>"/b7f0f5a1fb3847cc8858e12d723d34b8", "stats"=>{"name"=>"logyy", "uris"=>["logyy.local.lai"], "host"=>"10.10.101.168", "port"=>61052, "uptime"=>10888, "mem_quota"=>268435456, "disk_quota"=>1073741824, "fds_quota"=>16384, "usage"=>{"time"=>"2014-08-08 05:55:04 +0000", "cpu"=>0.0005824339272981639, "mem"=>190390272, "disk"=>101195776}}}
+{"dea"=>"0-7f6fe0afcf954c58b2544696cfd63c9d", "droplet"=>"ab0a25c6-359e-4a4e-9804-3d0b9976c89b", "version"=>"f23a38a2-34fc-47c4-bf35-a1a6ba5fa175", "instance"=>"b7f0f5a1fb3847cc8858e12d723d34b8", "index"=>0, "state"=>"RUNNING", "state_timestamp"=>1407466421.27603, "staged"=>"/b7f0f5a1fb3847cc8858e12d723d34b8", "stats"=>{"name"=>"logyy", "uris"=>["logyy.local.lai"], "host"=>"10.10.101.168", "port"=>61052, "uptime"=>10888, "mem_quota"=>268435456, "disk_quota"=>1073741824, "fds_quota"=>16384, "usage"=>{"time"=>"2014-08-08 05:55:04 +0000", "cpu"=>0.0005824339272981639, "mem"=>190390272, "disk"=>101195776}}}

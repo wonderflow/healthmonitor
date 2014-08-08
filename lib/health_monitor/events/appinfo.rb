@@ -12,7 +12,7 @@ module Bosh::HealthMonitor
            @index = attributes['index']
            @state = attributes['state']
            @stats = attributes['stats']
-           @timestamp = Time.at(@attributes["state_timestamp"])
+           #@timestamp = Time.at(@attributes["state_timestamp"])
            @name = @stats['name']
            @uris = @stats['uris']
            @host = @stats['host']
@@ -22,6 +22,12 @@ module Bosh::HealthMonitor
            @disk_quota = @stats['disk_quota']
            @fds_quota = @stats['disk_quota']
            @usage = @stats['usage']
+           time = @usage['time']
+           times = time.split()
+           days = times[0].split('-')
+           secs = times[1].split(':')
+           @timestamp = Time.mktime(days[0],days[1],days[2],secs[0],secs[1],secs[2])
+           #puts @timestamp
            @tags = {}
            @tags['name']=@name
            @tags['index'] = @index
