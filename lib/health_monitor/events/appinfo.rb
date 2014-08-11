@@ -72,15 +72,40 @@ module Bosh::HealthMonitor
           add_metric("appinfo.mem.kb",@usage['mem'].to_i/1024)
           add_metric("appinfo.disk.percent",@usage['disk'].to_f/@disk_quota.to_f)
           add_metric("appinfo.disk.kb",@usage['disk'].to_i/1024)
-          add_metric("appinfo.state", @state)
-          add_metric("appinfo.uris",@uris)
-          add_metric("appinfo.host.port",@host.to_s+":"+@port.to_s)
+          add_metric("appinfo.state", getState(@state))
+          #add_metric("appinfo.uris",@uris) #only a numnerc number is good
+          #add_metric("appinfo.host.port",@host.to_s+":"+@port.to_s)
         end
 
         def add_metric(name, value)
+          puts "#{name}:#{value}:#{@tags}"
           @metrics << Metric.new(name, value, @timestamp.to_i, @tags) if value
         end
 
+        def getState(strState)
+            state = -1
+            case strState
+            when 'BORN'
+            state = 0
+            when 'STARTING'
+            state = 1
+            when 'RUNNING'
+            state = 2
+            when 'STOPPING'
+            state = 3
+            when 'STOPPED'
+            state = 4
+            when 'CRASHED'
+            state = 5
+            when 'DELETED'
+            state = 6
+            when 'RESUMING'
+            state = 7
+            when 'EVACUATING'
+            state = 8
+            end
+            state
+          end
+        end
     end
   end
-end

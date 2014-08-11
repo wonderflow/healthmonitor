@@ -289,8 +289,8 @@ module Bosh::HealthMonitor
       response_hash = nil
       Bhm.nats.request('dea.find.droplet',mess_json) do |response| #assignment from a block'return value
         response_hash = Yajl::Parser.parse(response)
-        puts "responsehash:"
-        puts response_hash
+        #puts "responsehash:"
+        #puts response_hash
         @processor.process(:appinfo,response_hash)
       end
     end
