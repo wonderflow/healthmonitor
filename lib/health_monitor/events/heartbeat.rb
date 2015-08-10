@@ -33,6 +33,8 @@ module Bosh::HealthMonitor
 
         @vitals = @attributes["vitals"] || {}
 
+
+
         if checkVitalType(@vitals)==1
           @load = @vitals["load"] || []
           @cpu = @vitals["cpu"] || {}
@@ -42,6 +44,7 @@ module Bosh::HealthMonitor
           @system_disk = @disk["system"] || {}
           @ephemeral_disk = @disk["ephemeral"] || {}
           @persistent_disk = @disk["persistent"] || {}
+          @corenums = @attributes["cores"] || 1
           populate_system_metrics
         else
           @cpu = @vitals["cpu"]
@@ -124,6 +127,7 @@ module Bosh::HealthMonitor
         add_metric("system.disk.persistent.percent", @persistent_disk["percent"])
         add_metric("system.disk.persistent.inode_percent", @persistent_disk["inode_percent"])
         add_metric("system.healthy", @job_state == "running" ? 1 : 0)
+        add_metric("system.cpu.cores",@corenums)
       end
 
       def populate_process_metrics
